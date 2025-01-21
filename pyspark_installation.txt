@@ -1,0 +1,46 @@
+step 1 - Lets uninstall java from app settigs.
+
+step 2 - delete previous java & spark files from c-drive.
+
+step 3 - install java again.
+
+step 4 - cut newly created java file, which may mostly found in program files 86 and paste in c drive by
+         creating a new 'Java' folder.
+
+step 5 - go towards downloads & click on 'spark-3.3.1-bin-hadoop2', then right click-->winrar-->extract here.
+
+step 6 - cut extracted spark files and paste in c-drive by creating new 'Spark' folder.
+
+step 7 - now type @ search-bar --> env , if had recent 'JAVA-HOME' & 'SPARK-HOME' variables delete them also
+         delete paths given inside path variable for 'java' & 'spark'.
+         note - no need of 'spark' path inside path variable only 'java' path is required.
+
+step 8 - @ environment variables-->new-->variable name: JAVA_HOME, variable value:(-->browse directory-->
+         -->c-drive-->Java-->jre1.8.0_351)i.e; jre1.8.0_351. ok/save
+
+step 9 - @ environment variables-->new-->variable name: SPARK_HOME, variable value:(-->browse directory-->
+         -->c-drive-->Spark-->spark-3.3.1-bin-hadoop2)i.e; spark-3.3.1-bin-hadoop2. ok/save
+
+step10 - now go in c-drive-->Java-->jre1.8.0_351-->bin , here copy thid bin file path C:\Java\jre1.8.0_351\bin
+
+
+step11 - now env.variable-->path-->new--> (paste copied path)i.e; C:\Java\jre1.8.0_351\bin . ok/save
+
+step12 - now open jupyter note book and run following commandas
+
+
+pip install sparksql-magic
+
+import pyspark
+
+from pyspark import SparkContext
+
+from pyspark.sql import SparkSession
+
+from pyspark.sql import SQLContext
+
+spark = SparkSession.builder.appName('Test').getOrCreate()
+
+spark
+
+hope this will help you . Thanks...
