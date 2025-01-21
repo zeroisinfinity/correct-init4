@@ -2,7 +2,7 @@ step 1 - Lets uninstall java from app settigs.
 
 step 2 - delete previous java & spark files from c-drive.
 
-step 3 - install java again.
+step 3 - install java again
 
 step 4 - cut newly created java file, which may mostly found in program files 86 and paste in c drive by
          creating a new 'Java' folder.
